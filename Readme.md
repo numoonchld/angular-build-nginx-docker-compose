@@ -34,7 +34,7 @@
    ```
 4. `nvm use 16.15.1`
 5. `npm install -g @angular/cli`
-6. `ng new client`
+6. `ng new client --skip-git`
 
    - _router?_ : **yes**
    - _css_
@@ -79,4 +79,6 @@
 
 10. `ng build --watch`
 11. open new terminal, go to root `cd /..path/..to/project-root-dir`
-12. `docker compose up`
+12. `touch .gitignore` in the project root from the client root
+    - add `DS_Store` inside this file
+13. `docker compose up`
